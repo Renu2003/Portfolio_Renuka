@@ -1,0 +1,328 @@
+{
+	padding: 0;
+	margin: 0;
+}
+.portfolio-sections{
+	height: 500px;
+	width: 100%;
+/*	border: 2px solid black;*/
+	background-color: whitesmoke;
+	overflow: hidden;
+}
+.navigation-bar{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background-color: transparent;
+	backdrop-filter: blur(2px);
+	z-index: 1;
+}
+.portfolio-sections h1{
+	margin-top: 20px;
+}
+html{
+	scroll-behavior: smooth;
+}
+.main-container{
+	position: relative;
+	top: 100px;
+}
+.brand{
+	font-size: 45px;
+	font-family: Arial black;
+	font-variant: small-caps;
+	color:black;
+}
+.navmenu{
+	color: black;
+	font-size: 30px;
+	font-family: sans-serif;
+	font-weight: bolder;
+	padding-left: 15px;
+}
+.navmenu:hover{
+	text-decoration: underline 2px solid black;
+	text-underline-offset: 6px;
+}
+.tracking-in-expand-fwd {
+	-webkit-animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+#home{
+	height: 470px;
+	background height: 300px;
+	background-image: url("https://www.pngitem.com/pimgs/m/526-5263462_professional-woman-hd-png-download.png");
+	background-repeat: no-repeat;
+	background-size: 45%;
+	background-position:100% 6%;
+	border: none;
+}
+.home-info{
+	position: absolute;
+	top: 20px;
+	width: 400px;
+	height: 350px;
+	font-size: 40px;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+.info{
+	font-weight: bolder;
+	color: lightslategrey;
+}
+.designation{
+	color: seagreen;
+	font-size: 30px;
+	font-weight: bolder;
+}
+.myname{
+	font-size: 35px;
+	color: seagreen;
+}
+
+.rsmbtn{
+	height: 40px;
+	width: 100px;
+	border: none;
+	margin-top: 20px;
+	border-radius: 10px;
+	font-size: 15px;
+	font-weight: bolder;
+	background-color: seagreen;
+	color: white;
+	transition-duration: 1s;
+}
+.resume{
+	color: white;
+}
+.rsmbtn:hover{
+	background-color: white;
+	color: royalblue;
+	border: 3px solid seagreen;
+	transform: scale(1.1);
+}
+
+
+.about-section{
+	height: 500px;
+	width: 100%;
+	background-color: lightslategrey;
+}
+.aboutmain{
+	height: 500px;
+	width: 100%;
+	display: flex;
+	font-size: 25px;
+	font-family: sans-serif;
+	font-weight: bolder;
+}
+.aboutmain div{
+	height: 500px;
+	width: 50%;
+}
+.girlimage{
+	height: 400px;
+	width: 400px;
+}
+.careerimg{
+	margin-top: 60px;
+	margin-left: 80px;
+	animation-duration: 4s;
+	animation-name: zoom;
+	animation-iteration-count: 1;
+}
+@keyframes zoom{
+	100%{
+		transform: scale(1.2);
+		border-radius: 60px;
+	}
+}
+.heading{
+	font-family: Arial black;
+	text-align: center;
+	margin: 30px 0px;
+	font-size: 40px;
+	color: black;
+}
+.careerobj{
+	padding: 30px;
+}
+.careerinfo{
+	text-align: justify;
+	line-height: 40px;
+	text-indent: 100px;
+	word-spacing: 7px;
+	letter-spacing: 1px;
+	color: lightgoldenrodyellow;
+}
+
+
+#skills{
+	height: 400px;
+	width: 100%;
+	background-color: lightcoral;
+}
+.tbl{
+	margin-left: 5%;
+}
+.tbl tr td{
+	padding: 30px;
+	border-radius: 25px;
+	box-shadow: 0px 0px 6px black;
+	transition-duration: 1.5s;
+}
+.skills-subheading{
+	color: lightgoldenrodyellow;
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 30px;
+	font-variant: small-caps;
+	margin-top: 20px;
+}
+.detailedSkills{
+	font-size: 23px;
+/*	font-weight: bolder;*/
+/*	color: rgb(109, 101, 101);*/
+	line-height: 30px;
+	word-spacing: 3px;
+	margin-top: 10px;
+	color: black;
+}
+td{
+	padding: 30px;
+}
+.tbl tr td:hover{
+	transform: scale(1.05);
+	border: 4px solid gray;
+	box-shadow: 10px 15px 10px gray;
+}
+
+
+#project{
+	height: 600px;
+	width: 100%;
+	padding: 10px;
+	background-color: lightslategrey;
+}
+
+.project-card-container{
+/*	padding: 40px;*/
+/*	margin-top: 20px;*/
+}
+.card-title{
+	color: black;
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: bolder;
+}
+.card{
+	background-color: lightgoldenrodyellow;
+}
+.card-body{
+	background-color: lightcoral;
+}
+.card-title:hover{
+	text-decoration: underline 2px solid red;
+	text-underline-offset: 5px;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+.card-image{
+	height: 300px;
+	width: 350px;
+	align-items: center;
+	padding: 30px;
+	margin: auto;
+/*	display: block;*/
+}
+
+
+#contact{
+	height: 450px;
+	width: 100%;
+	background-color: lightslategrey;
+	padding: 20px;
+}
+.contact-container{
+	height: 400px;
+	width: 80%;
+	display: flex;
+	margin-left: 10%;
+}
+.color{
+	color: black;
+}
+.contact-child{
+	height: 200px;
+	width: 50%;
+}
+.contact-info{
+	font-size: 20px;
+	font-family: sans-serif;
+	font-weight: bolder;
+	margin-top: 20px;
+	color: black;
+}
+.contact-info li{
+	margin-top: 20px;
+}
+.contact-form{
+	padding: 15px;
+	padding-left: 70px;
+	margin-top: 50px;
+}
+
+
+
+#footer{
+	height: 30px;
+	width: 100%;
+	background-color: black;
+	text-align: center;
+	margin-bottom: 20px;
+}
+#footerinfo{
+	font-size: 20px;
+	line-height: 30px;
+	color: white;
+}
+/*.footer{
+	width: 100%;
+}
+.footer-info{
+	font-size: 20px;
+	background-color: royalblue;
+}*/
